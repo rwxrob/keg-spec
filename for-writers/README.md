@@ -10,14 +10,14 @@ most money and power to promote their own agenda. KEG promotes informed
 written dialog and debate (not advertising, trolling, and violent
 disagreement).
 
-KEGML, the main syntax of knowledge source on KEG, is a simplified
-version of Pandoc Markdown. Most can learn it over a single cup of
-coffee. No tools other than a means of writing and storage are required.
-Even paper and pencil fulfill this need. KEG content creation is,
-therefore, highly compatible with most note-taking techniques ---
+[KEGML](/kegml), the main syntax of knowledge source on KEG, is a
+simplified version of Pandoc Markdown. Most can learn it over a single
+cup of coffee. No tools other than a means of writing and storage are
+required. Even paper and pencil fulfill this need. KEG content creation
+is, therefore, highly compatible with most note-taking techniques ---
 especially the Zettelkasten method. Need complicated Math notation? The
 international MathJax standard is supported making KEG 100% accessible
 to the blind community as well.
 
-* KEGML Specification  
-  https://github.com/rwxrob/kegml-spec
+* Pandoc - Pandoc User's Guide  
+  https://pandoc.org/MANUAL.html?pandocs-markdown

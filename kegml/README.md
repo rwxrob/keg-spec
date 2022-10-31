@@ -21,6 +21,9 @@ content nodes are easily moved and included into any composition.
 
 * [KEGML Links](/kegml-links)
 
+* Pandoc - Pandoc User's Guide  
+  https://pandoc.org/MANUAL.html?pandocs-markdown
+
 * Niklas Luhman's Zettelkasten Method  
   https://luhmann.surge.sh
 
