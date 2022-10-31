@@ -18,6 +18,3 @@ is, therefore, highly compatible with most note-taking techniques ---
 especially the Zettelkasten method. Need complicated Math notation? The
 international MathJax standard is supported making KEG 100% accessible
 to the blind community as well.
-
-* Pandoc - Pandoc User's Guide  
-  https://pandoc.org/MANUAL.html?pandocs-markdown
