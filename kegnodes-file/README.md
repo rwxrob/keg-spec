@@ -20,8 +20,20 @@ The first field MUST be an [isosec unique identifer](/isosec)
 
 The second field MUST be a [KEG node unique identifier](/schema-node).
 
-The third field MUST be one of `T` (text), `D` (data), `F` (figure) to
-indicate the [KEG node type](/schema-node). This must indicate the
-primary type when a secondary type is also allowed (data nodes that are
-also figures because of dynamically generated graphs, etc.).
+The third field MUST be one of the following to indicate the [KEG node
+type(s)](/schema-node):
 
+* `T` - text
+* `D` - data
+* `F` - figure
+* `TD` - text, data (ex: table data within text)
+* `DF` - data, figure (ex: data with graph)
+* `TF` - text, figure (ex: art with commentary)
+* `TDF` - text, data, figure  (ex: data with graph and explanation)
+
+Here's a sample from this KEG (`keg-spec`):
+
+```kegnodes
+20221031180218 kegnodes-file T
+20221031180317 schema-keg TD
+```

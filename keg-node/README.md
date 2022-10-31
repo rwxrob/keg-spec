@@ -5,12 +5,20 @@ form the graph data structure and mathematics. A node is the vertex at
 which other lines, links, or edges meet. It is the most granular
 and composable unit of the KEG network.
 
-A KEG *node* is simply a directory that MUST contain one of the
+A KEG node is simply a directory that MUST contain one of the
 identifying structured content files.
 
-* Text - `README.md`
-* Data - `DATA.*`
-* Figures - `FIGURE.*`
+* Text (T) - `README.md`
+* Data (D) - `DATA.*`
+* Figure (F) - `FIGURE.*`
+
+These types are represented by a single character in
+the [KEGNODES manifest file](/kegnodes-file).
+
+A KEG node may have multiple types simultaneously. For example, a data
+node might also be a figure node containing a graph that is dynamically
+generated from the DATA.* file, and both the data and the figure might
+be included in the README.md file of the same node as type text. 
 
 The asterisk current represents the following possible structured data
 formats (only):
