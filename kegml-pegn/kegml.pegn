@@ -1,0 +1,11 @@
+Grammar       <-- Title Block+ Tags?
+Block         <-- Include / Bulleted / Numbered / Figure / Syntaxed
+                  / Semantic / Tex / Quote / Verbatim
+Span          <-- StrEmph / Strong / Emph / Del / Math / Sem / Plain
+StrEmph       <-- '***' Plain '***'
+Strong        <-- '**' Plain '**'
+Emph          <-- '*' Plain '*'
+Tags          <-- SP{4} Tag+
+Tag           <-- hashtag TODO
+
+hashtag       <- '#' / uFF03

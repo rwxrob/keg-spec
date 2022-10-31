@@ -1,0 +1,46 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id:     https://keg.pub/schema-keg
+type:    object
+
+title: Knowledge Exchange Graph (KEG)
+
+description:
+  The KEG.yaml file identifies a KEG wherever it may be and contains its
+  properties and meta data. It must be in the directory containing one
+  or more KEG Node directories.
+
+required:
+  - title
+  - summary
+  - creator
+  - license
+
+oneOf:
+  required: ["url"]
+  required: ["urls"]
+
+properties:
+  title:
+    description:
+      Human-friendly, searchable title of a KEG
+    type: string
+  summary:
+    description:
+      Summary of KEG content in 250 words or less
+    type: string
+  creator:
+    description:
+      URL pointing to primary KEG of content creator(s)
+    type: string
+  description:
+    description:
+      Long description of KEG content
+  url:
+    description:
+      Universal Resource Locator of KEG
+  urls:
+    description:
+      Multiple unique Universal Resource Locators allowing for different
+      ways to locate and acquire the KEG. The order must indicate the
+      most likely availability and recommended preference first in the list.
+    uniqueItems: true

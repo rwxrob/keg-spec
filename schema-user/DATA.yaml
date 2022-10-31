@@ -1,0 +1,51 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id:     https://keg.pub/schema-user
+type:    object
+
+title: User Knowledge Exchange Graph (User KEG)
+
+description:
+  The KEG.yaml file also contains user information for "user KEGs"
+  extensions to the KEG directory and type that contain identifying
+  information for a specific KEG user as well as FOLLOW and AVOID
+  recommendation files and the /cached copies of KEGs followed by the
+  user.
+
+allOf:
+  - $ref: https://keg.pub/schema-keg
+
+required:
+  - user
+
+properties:
+  user:
+    properties:
+      name:
+        description: Full name as used in correspondance
+        type: string
+      handle:
+        description:
+          Preferred KEG user identifier. Note this could potentially be
+          a duplicate of another KEG users but easily disambiguated with
+          the required user.homeurl property.
+        pattern: ^\p{L}\p{L|Nd}{1,24}$
+      homeurl:
+        description:
+          Authoritative home URL of this user KEG
+        type:
+          $ref: https://keg.pub/schema-url
+      urls:
+        description:
+          List of any other relevant URLs, KEG or otherwise
+        type: array
+        items:
+          $ref: https://keg.pub/schema-url
+        uniqueItems: true
+      pubkeys:
+        type: array
+        items:
+          $ref: https://keg.pub/schema-pubkey
+      required:
+        - name
+        - handle
+        - homeurl
