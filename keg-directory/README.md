@@ -20,4 +20,7 @@ normally a *node* may not).
 
 A KEG *directory* MUST contain a `KEG.yaml` file.
 
+A KEG directory MUST contain a KEGNODES file.
+
+* [KEGNODES Manifest File](/kegnodes-file)
 * [KEG Directory Schema](/schema-keg)
