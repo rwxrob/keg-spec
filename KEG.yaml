@@ -1,8 +1,6 @@
-title: 
-uri:     git@github.com:rwxrob/youtube.git
+title:   Knowledge Exchange Graph (KEG) Specification
+uri:     git@github.com:rwxrob/keg-spec.git
 creator: git@github.com:rwxrob/rwxrob.git
 summary:
-  Searchable descriptions for all YouTube videos from rwxrob including
-  links to specific videos. Follow to see when new videos are posted
-  (which you can also do directly from GitHub or YouTube instead if you
-  prefer).
+  An alternative to a broken Web for knowledge content creation,
+  management, publishing, attribution, and secure exchange.
