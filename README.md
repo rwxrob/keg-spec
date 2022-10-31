@@ -1,5 +1,8 @@
 # Knowledge Exchange Graph (KEG) Specification
 
+*State of this specification is current a working draft (see
+[KEG.yaml](KEG.yaml)).*
+
 The *Knowledge Exchange Graph* is a secure, performant, grassroots,
 decentralized, transport-agnostic, universal graph network of modular,
 semantic, knowledge nodes that are exchanged, cached, and locally

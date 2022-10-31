@@ -1,6 +1,7 @@
 title:   Knowledge Exchange Graph (KEG) Specification
 uri:     git@github.com:rwxrob/keg-spec.git
 creator: git@github.com:rwxrob/rwxrob.git
+state:   draft
 summary:
   An alternative to a broken Web for knowledge content creation,
   management, publishing, attribution, and secure exchange.

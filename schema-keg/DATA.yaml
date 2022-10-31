@@ -38,9 +38,32 @@ properties:
   url:
     description:
       Universal Resource Locator of KEG
+    type:
+      $ref: https://keg.pub/schema-url
   urls:
     description:
       Multiple unique Universal Resource Locators allowing for different
       ways to locate and acquire the KEG. The order must indicate the
       most likely availability and recommended preference first in the list.
+    type: array
+    items:
+      type:
+        $ref: https://keg.pub/schema-url
     uniqueItems: true
+  state:
+    description:
+      Overall state of the KEG content. This allows content not ready
+      for consumption or publication to be identified as such easily.
+      'draft' means under active development. 'alpha' means released for
+      consideration to isolated group of consumers for testing, but not
+      ready. 'beta' means released widely for all consumers for final
+      testing before release. 'working' means that portions are in
+      'draft' state while most of it is also still being used. 'living'
+      (default) means ready for consumption but regularly changing.
+      'dynamic' is same as 'living' but content is changing at a much
+      higher rate than most, useful for KEGs with high concentration of
+      dynamic nodes. 'final' is for highly static content that very
+      rarely changes, and if it did would likely result in another KEG
+      rather than changes to this one.
+    type:
+      enum: ["draft","alpha","beta","working","living","dynamic","final"]
