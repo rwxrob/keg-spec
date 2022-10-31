@@ -10,7 +10,7 @@ most money and power to promote their own agenda. KEG promotes informed
 written dialog and debate (not advertising, trolling, and violent
 disagreement).
 
-[KEGML](/kegml), the main syntax of knowledge source on KEG, is a
+[KEGML](/kegml), the main syntax of KEG knowledge source, is a
 simplified version of Pandoc Markdown. Most can learn it over a single
 cup of coffee. No tools other than a means of writing and storage are
 required. Even paper and pencil fulfill this need. KEG content creation
