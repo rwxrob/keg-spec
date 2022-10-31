@@ -11,7 +11,7 @@ on it. The main point of KEG is the encapsulation of primarily written
 content organized in a simple, predictable way to promote standardized
 creation, management, and sharing.
 
-* [KEG Directory](/schema-keg)
-* [KEG User](/schema-user)
-* [KEG URL](/schema-url)
-* [KEG Public Key](/schema-pubkey)
+* [KEG Directory](/keg-directory)
+* [KEG User](/keg-user)
+* [KEG URL](/keg-url)
+* [KEG Public Key](/keg-public-key)

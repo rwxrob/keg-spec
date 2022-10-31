@@ -10,6 +10,20 @@ A ***node*** (or "knowledge node") is simply a directory with a
 A ***dynamic node*** (or "generated node") is a *node* that requires a
 generator be run to produce the `README.md` or `DATA.*` files.
 
+An ***included node*** is one that is included in the major KEG content
+using an *node include link*. There is no limit to the number of times a
+node may be included, but most tools will generate warnings by default
+when included more than once. This motivated content creators to find
+that one best place to include any given node.
+
+A ***secondary node*** is one that is referenced with a *node reference
+link* but not included.
+
+An ***orphan node*** is one that has no other links to it whatsoever
+(but still MUST be included in the `KEGNODES` manifest).
+
+A ***broken link*** is one that points non-existent content.
+
 A * and any number of optional source
 files from this these other two main files are generated. This
 simplicity is by design. A *node* is

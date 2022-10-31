@@ -95,3 +95,5 @@ interpreter delegation (i.e. she-bang lines).
 Note that generators MUST NEVER be compiled code and MUST NOT contain
 secrets of any kind, which will generally be stored in other ways and
 pulled in during the generation process.
+
+* [KEG Schema](/schema-keg)

@@ -19,6 +19,8 @@ to produce simpler, digestible content with an organization that is
 easier on everyone, no matter the method of final publication. Modular
 content nodes are easily moved and included into any composition.
 
+* [KEGML Links](/kegml-links)
+
 * Niklas Luhman's Zettelkasten Method  
   https://luhmann.surge.sh
 
