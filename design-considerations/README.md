@@ -10,6 +10,25 @@ Front matter has always been a bad idea since it violates fundamental
 principles of separation of concerns confusing content creators and
 software applications alike.
 
+**Leave cache indexing up to tools**
+
+For a time formalizing the inclusion of text-based indexes was
+entertained. But work of dealing with indexing has to be assigned to
+either a consumption tool or a generator. The method and type of
+indexing will also obviously vary greatly depending on the content and
+needs of the content consumers, it was therefore decided to omit any
+specification of how to index KEG content other than the [KEGNODES
+file](/kegnodes-file) since it is so crucial to a standardized exchange
+of KEG content.
+
+It is expected that those creating KEG tools will want to create keyword
+indexes, category and tag lists, word counts, and other reference
+content that is dynamically generated and updated upon every KEG node
+update. The KEGNODES manifest is crucial to this since it eliminates the
+need to re-index the entire KEG on every update, only those nodes that
+have risen to the top of the KEGNODES file because of updates since the
+last pull of the file.
+
 **YAML as structured data format**  
 
 YAML has become the world-wide standard for human-friendly structured
