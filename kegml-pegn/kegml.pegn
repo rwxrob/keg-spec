@@ -4,7 +4,10 @@ List          <- Bulleted / Numbered
 Bulleted      <-- '*' SP Item
 Numbered      <-- '1.' SP Item
 Item          <--
-Span          <-- StrEmph / Strong / Emph / Del / Math / Pre / Plain
+Span          <-- StrEmph / Strong / Emph / Del / Math / Pre / Plain 
+                  / Link / Include
+Link          <-  URL / NodeLink / FileLink
+Include       <-- NodeInclude / FileInclude
 StrEmph       <-- '***' Plain '***'
 Strong        <-- '**' Plain '**'
 Emph          <-- '*' Plain '*'
