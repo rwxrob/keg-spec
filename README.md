@@ -1,7 +1,7 @@
 # Knowledge Exchange Graph (KEG) Specification
 
 *State of this specification is current a working draft (see
-[KEG.yaml](KEG.yaml)).*
+[KEG.yaml]).*
 
 The *Knowledge Exchange Graph* is a secure, performant, grassroots,
 decentralized, transport-agnostic, universal graph network of modular,
@@ -11,10 +11,16 @@ their recommendations to produce a self-governing knowledge network
 built on authenticated, distributed trust.
 
 * [Motivation]
-* [Style and Conventions](/style-and-conventions)
-* [Terminology](/terminology)
-* [Design Considerations](/design-considerations)
-* [Domain Model](/domain-model)
-* [KEG Markup Language (KEGML)](/kegml)
+* [Style and Conventions]
+* [Terminology]
+* [Design Considerations]
+* [Domain Model]
+* [KEG Markup Language (KEGML)]
 
+[KEG.yaml]: KEG.yaml
 [Motivation]: /motivation
+[Style and Conventions]: /style-and-conventions
+[Terminology]: /terminology
+[Design Considerations]: /design-considerations
+[Domain Model]: /domain-model
+[KEG Markup Language (KEGML)]: /kegml
