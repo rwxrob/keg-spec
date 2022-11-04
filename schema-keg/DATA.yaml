@@ -30,7 +30,7 @@ properties:
     type: string
   creator:
     description:
-      URL pointing to primary KEG of content creator(s)
+      Name or URL pointing to primary KEG of content creator(s)
     type: string
   description:
     description:
@@ -67,3 +67,4 @@ properties:
       rather than changes to this one.
     type:
       enum: ["draft","alpha","beta","working","living","dynamic","final"]
+

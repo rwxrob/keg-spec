@@ -26,8 +26,10 @@ The KEGML design contains many significant constraints from both Pandoc and the 
 * Only `semblk` and `quote` allows inclusion of other blocks
 * Full support for Pandoc *regular* attributes (only, no "raw attributes)
 * Only `verbatim`, `bracketed` span and `div`, `fenced` blocks support attributes
-* Spans `verbatim`, `bracketed` only support a single, undotted class attribute
-* Blocks `div` and `fenced` support full Pandoc attributes (languages, etc.)
+* Undotted single class attributes should be preferred
+* Languages must use the `{lang=en}` standard semantic attribute notation
+* A list of standardized attributes will be included with KEG (superset of Pandoc)
+* Non-semantic attributes are strongly discouraged since they destroy readability
 * Both `BACKTICK{3,8}` and `SQUIGLE{3,8}` supported for `fenced`
 * Languages should generally be separated by blocks --- especially `div`
 * A single space is optional between opening `div` and `fenced`
