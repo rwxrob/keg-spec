@@ -1,20 +1,32 @@
 Grammar       <-- Title Block+ Tags?
 Title         <-- '#' SP <(uprint / SP){1,70}>
-Block         <-- Include / List / Figure / Fenced / Sem / Tex / Quote / Raw
-List          <- Bulleted / Numbered
-Bulleted      <-- '*' SP Item
-Numbered      <-- '1.' SP Item
-Item          <--
-Span          <-- StrEmph / Strong / Emph / Del / Math / Pre / Plain
-                  / Parens / Brackets / Braces / SQuotes / DQuotes /
-Link          <-  URL / NodeLink / FileLink
-Include       <-- NodeInclude / FileInclude
-StrEmph       <-- '***' Plain '***'
-Strong        <-- '**' Plain '**'
-Emph          <-- '*' Plain '*'
+
+Block         <-- Include / Bulleted / Numbered / Figure / Fenced
+                  / Tex / Quote / Raw / Ref / Div / Para
+
+BulItem       <-- '*' SP Para
+NumItem       <-- '1.' SP Para
+
+Span          <-- Italic / Bold / Verbatim / Math / Striked / SQuoted / DQuoted
+                  / Bracketed / Braced / Angled / URL / Plain
+
+Div           <-- ':'{3,8} Attributes
+
+Attributes    <-- Simple
+
+Include       <-- Node / File
+
+Bold          <-- '**' !'**' Span+ '**'
+Italic        <-- '*' !'*' Span+ '*'
+
 Tags          <-- SP{4} Tag+
 Tag           <-- hashtag TODO
 
-Bracketed     <-- '[' Plain ']'
+Striked       <-- '~~' !'~~' Span+ '~~'
+Bracketed     <-- '[' !'[' Span+ ']'
+Braced        <-- '{' !'{' Span+ '}'
+Angled        <-- '<' !'>' Span+ '>'
+SQuoted       <-- SQ !SQ Span+ SQ
+DQuoted       <-- DQ !DQ Span+ DQ
 
 hashtag       <- '#' / uFF03

@@ -10,17 +10,11 @@ searched by those who create and maintain them. The KEG community shares
 their recommendations to produce a self-governing knowledge network
 built on authenticated, distributed trust.
 
-* [Motivation]
-* [Style and Conventions]
-* [Terminology]
-* [Design Considerations]
-* [Domain Model]
-* [KEG Markup Language (KEGML)]
+* [Motivation](/motivation)
+* [Style and Conventions](/style-and-conventions)
+* [Terminology](/terminology)
+* [Design Considerations](/design-considerations)
+* [Domain Model](/domain-model)
+* [KEG Markup Language (KEGML)](/kegml)
 
 [KEG.yaml]: KEG.yaml
-[Motivation]: /motivation
-[Style and Conventions]: /style-and-conventions
-[Terminology]: /terminology
-[Design Considerations]: /design-considerations
-[Domain Model]: /domain-model
-[KEG Markup Language (KEGML)]: /kegml

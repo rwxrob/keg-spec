@@ -8,9 +8,11 @@ content aggregation and conversion into other publishing formats.
 Here's a representative sample of different KEGML link types:
 
 ```markdown
-Sometimes a reference link to [another node](/another-node) within this
-KEG is useful[^note]. Note that such links are never to specific
-files and *always* begin with slash.
+Sometimes a reference link to [another node] within this KEG is
+useful[^note]. Note that such links are never to specific files and
+*always* begin with slash.
+
+[another node]: /another-node
 
 * [This Node Will Be Included](/include-me)
 * [And This One](/include-me-too)
