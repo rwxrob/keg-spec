@@ -10,9 +10,11 @@ searched by those who create and maintain them. The KEG community shares
 their recommendations to produce a self-governing knowledge network
 built on authenticated, distributed trust.
 
-* [Motivation](/motivation)
+* [Motivation]
 * [Style and Conventions](/style-and-conventions)
 * [Terminology](/terminology)
 * [Design Considerations](/design-considerations)
 * [Domain Model](/domain-model)
 * [KEG Markup Language (KEGML)](/kegml)
+
+[Motivation]: /motivation
