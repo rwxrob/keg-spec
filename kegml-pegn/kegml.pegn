@@ -1,7 +1,10 @@
 Grammar       <-- Title Block+ Tags?
-Block         <-- Include / Bulleted / Numbered / Figure / Syntaxed
-                  / Semantic / Tex / Quote / Verbatim
-Span          <-- StrEmph / Strong / Emph / Del / Math / Sem / Plain
+Block         <-- Include / List / Figure / Fenced / Sem / Tex / Quote / Raw
+List          <- Bulleted / Numbered
+Bulleted      <-- '*' SP Item
+Numbered      <-- '1.' SP Item
+Item          <--
+Span          <-- StrEmph / Strong / Emph / Del / Math / Pre / Plain
 StrEmph       <-- '***' Plain '***'
 Strong        <-- '**' Plain '**'
 Emph          <-- '*' Plain '*'
