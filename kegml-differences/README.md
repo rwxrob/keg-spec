@@ -28,6 +28,7 @@ The KEGML design contains many significant constraints from both Pandoc and the 
 * Only `verbatim`, `bracketed` span and `div`, `fenced` blocks support attributes
 * Spans `verbatim`, `bracketed` only support a single, undotted class attribute
 * Blocks `div` and `fenced` support full Pandoc attributes (languages, etc.)
+* Both `BACKTICK{3,8}` and `SQUIGLE{3,8}` supported for `fenced`
 * Languages should generally be separated by blocks --- especially `div`
 * A single space is optional between opening `div` and `fenced`
 * Div blocks should take advantage of initial cap readability `::: Warning`
