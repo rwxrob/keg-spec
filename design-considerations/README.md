@@ -1,32 +1,29 @@
 # Design Considerations
 
-**Use of 4-letter suffix for YAML**  
+* **Soft returns cause viewing and `diff` problems**
+
+A soft return is a single line return in the middle of a paragraph block. In Markdown such are handled the same as an extra space and ignored. However, this practice has always been controversial.
+
+For instance, lines that have the exact same words on them will be reported by `diff` and other tools just for reformatting.
+
+Content creators can also never agree on what the optimal column width should be: 80, 72, 108? This creates huge frustration because one wrap column width looks great for someone while another one looks horrible.
+
+Better to let the content creator and consume decide *their* preferred column width so that they can view it on the most things without a problem. This is in line with Gruber's "source should be as readable as the render" principle. Whether a reader has minimized a TMUX pane to 10x10 in a corner or filled the screen, the automatic wrapping will remain as readable as possible.
+
+* **Use of 4-letter suffix for YAML**
 
 The YAML creators prefer 4 letters over three (`.yml`).
 
-**Never any "front matter"**  
+* **Never any "front matter"**
 
-Front matter has always been a bad idea since it violates fundamental
-principles of separation of concerns confusing content creators and
-software applications alike.
+Front matter has always been a bad idea since it violates fundamental principles of separation of concerns confusing content creators and software applications alike.
 
-**Leave cache indexing up to tools**
+* **Leave cache indexing up to tools**
 
-For a time formalizing the inclusion of text-based indexes was
-entertained. But work of dealing with indexing has to be assigned to
-either a consumption tool or a generator. The method and type of
-indexing will also obviously vary greatly depending on the content and
-needs of the content consumers, it was therefore decided to omit any
-specification of how to index KEG content other than the [KEGNODES
-file](/kegnodes-file) since it is so crucial to a standardized exchange
+For a time formalizing the inclusion of text-based indexes was entertained. But work of dealing with indexing has to be assigned to either a consumption tool or a generator. The method and type of indexing will also obviously vary greatly depending on the content and needs of the content consumers, it was therefore decided to omit any specification of how to index KEG content other than the [KEGNODES file](/kegnodes-file) since it is so crucial to a standardized exchange
 of KEG content.
 
-It is expected that those creating KEG tools will want to create keyword
-indexes, category and tag lists, word counts, and other reference
-content that is dynamically generated and updated upon every KEG node
-update. The KEGNODES manifest is crucial to this since it eliminates the
-need to re-index the entire KEG on every update, only those nodes that
-have risen to the top of the KEGNODES file because of updates since the
+It is expected that those creating KEG tools will want to create keyword indexes, category and tag lists, word counts, and other reference content that is dynamically generated and updated upon every KEG node update. The KEGNODES manifest is crucial to this since it eliminates the need to re-index the entire KEG on every update, only those nodes that have risen to the top of the KEGNODES file because of updates since the
 last pull of the file.
 
 **YAML as structured data format**  
