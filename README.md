@@ -12,7 +12,7 @@ built on authenticated, distributed trust.
 
 * [Motivation](/motivation)
 * [Style and Conventions](/style-and-conventions)
-* [Terminology](//terminology)
+* [Terminology](/terminology)
 * [Design Considerations](/design-considerations)
 * [Domain Model](/domain-model)
 * [KEG Markup Language (KEGML)](/kegml)
