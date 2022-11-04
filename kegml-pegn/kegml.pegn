@@ -1,11 +1,12 @@
 Grammar       <-- Title Block+ Tags?
+Title         <-- '#' SP <(uprint / SP){1,70}>
 Block         <-- Include / List / Figure / Fenced / Sem / Tex / Quote / Raw
 List          <- Bulleted / Numbered
 Bulleted      <-- '*' SP Item
 Numbered      <-- '1.' SP Item
 Item          <--
-Span          <-- StrEmph / Strong / Emph / Del / Math / Pre / Plain 
-                  / Link / Include
+Span          <-- StrEmph / Strong / Emph / Del / Math / Pre / Plain
+                  / Parens / Brackets / Braces / SQuotes / DQuotes /
 Link          <-  URL / NodeLink / FileLink
 Include       <-- NodeInclude / FileInclude
 StrEmph       <-- '***' Plain '***'
@@ -13,5 +14,7 @@ Strong        <-- '**' Plain '**'
 Emph          <-- '*' Plain '*'
 Tags          <-- SP{4} Tag+
 Tag           <-- hashtag TODO
+
+Bracketed     <-- '[' Plain ']'
 
 hashtag       <- '#' / uFF03
