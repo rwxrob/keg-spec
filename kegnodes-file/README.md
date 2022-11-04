@@ -21,18 +21,15 @@ The first field MUST be an [isosec unique identifer](/isosec)
 The second field MUST be one of the following to indicate the [KEG node
 type(s)](/schema-node).
 
-
 * `t` - text
 * `d` - data
 * `f` - figure
 * `D` - data, text (ex: table data within text)
-* `G` - figure, data (as in "graphic", ex: data with graph)
-* `T` - text, figure (ex: art with commentary)
-* `A` - text, data, figure  (ex: data with graph and explanation)
-
-For types composed of more than one base type
-(k/t/f) there is generally one type that is still primary (D=data,
-G=figure, T=text, A=text).
+* `g` - data,figure (priority on data, but figure from data)
+* `G` - figure, data (as in "graphic", priority on figure over data)
+* `F` - figure, text (priority on figure, ex: art with commentary)
+* `T` - text, figure (ex: story with illustration(s))
+* `R` - text, data, figure  (rich, text, data, figures, equal priority)
 
 The third field MUST be a [KEG node identifier](/schema-node). Any
 identifier is allowed but it is strongly RECOMMENDED that identifiers
@@ -55,6 +52,6 @@ write and share..
 Here's a sample from this KEG (`keg-spec`):
 
 ```kegnodes
-20221031180218 kegnodes-file T
-20221031180317 schema-keg TD
+20221031180218 t kegnodes-file
+20221031180317 D schema-keg
 ```
