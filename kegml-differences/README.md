@@ -40,6 +40,7 @@ The KEGML design contains many significant constraints from both Pandoc and the 
 * A `verbatim` span must never contain a backtick (use `bracketed`, etc. instead)
 * All spans are semantic (like HTML5 `<i>`, `<b>`, think novels)
 * Spans composed of `fields` of printable UNICODE code points
+* Only one Refs block for a single KEG node (and it must be above tags)
 * Fields composed of `letters`, `punc`, `printable` (hyphenated terms, etc.)
 * No tables whatsoever (better as DATA node instead)
 * No separators (horizontal rules)

@@ -1,4 +1,4 @@
-Grammar       <-- Title Block+ Tags?
+Grammar       <-- Title Block+ Refs Tags?
 Title         <-- '#' SP <(uprint / SP){1,70}>
 
 Block         <-- Include / Bulleted / Numbered / Figure / Fenced
@@ -7,22 +7,31 @@ Block         <-- Include / Bulleted / Numbered / Figure / Fenced
 BulItem       <-- '*' SP Para
 NumItem       <-- '1.' SP Para
 
-Span          <-- Italic / Bold / Verbatim / Math / Striked / SQuoted / DQuoted
-                  / Bracketed / Braced / Angled / URL / Plain
+Span          <-- Inflect / Bold / Verbatim / Math / Deleted
+                  / Quoted / QQuoted / Bracketed / Braced
+                  / Angled / URL / Plain
 
-Div           <-- ':'{3,8} Attributes
+Fenced        <-- <=tag ('~'{3,8} / BTICK{3,8}) > Attributes?
+                  !tag rune+ tag
 
-Attributes    <-- Simple
+Div           <-- <=tag ':'{3,8} Attributes >
+                  !tag rune+ tag
+
+Attributes    <-- SimpleClass / BracedAttributes
+
+Attributes    <-- ClassName / '{' ('#' Anchor) ('.' ClassName)* Attribute* '}'
+
+SimpleClass   <-- ClassName
 
 Include       <-- Node / File
 
 Bold          <-- '**' !'**' Span+ '**'
-Italic        <-- '*' !'*' Span+ '*'
+Inflect       <-- '*' !'*' Span+ '*'
 
 Tags          <-- SP{4} Tag+
 Tag           <-- hashtag TODO
 
-Striked       <-- '~~' !'~~' Span+ '~~'
+Deleted       <-- '~~' !'~~' Span+ '~~'
 Bracketed     <-- '[' !'[' Span+ ']'
 Braced        <-- '{' !'{' Span+ '}'
 Angled        <-- '<' !'>' Span+ '>'
@@ -30,3 +39,6 @@ SQuoted       <-- SQ !SQ Span+ SQ
 DQuoted       <-- DQ !DQ Span+ DQ
 
 hashtag       <- '#' / uFF03
+
+ws            <- LF / SP
+rune          <- ws / uprint
