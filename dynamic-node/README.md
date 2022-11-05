@@ -5,7 +5,8 @@ must be available to anyone viewing the node. This method is contained
 within the `gen.*` file. Dependencies on public or private libraries and
 data is fine. The goal is to inform followers of the method in general.
 
-:::note
+::: Note
+
 The inclusion of the `gen.*` generator is *only* to give insight
 into the origin of the node content, not to allow anyone following the
 dynamic node to generate their own. Content creators are under no
@@ -13,6 +14,7 @@ obligation to include generators that would actually work for anyone
 but themselves during the local dynamic node generation process. Some
 creators, however, may elect to make sure that others can generate
 their own, for example, when *cloning* a dynamic node.
+
 :::
 
 The decision about if and how to communicate the last updated date and

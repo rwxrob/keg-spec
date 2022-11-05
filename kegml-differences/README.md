@@ -34,6 +34,8 @@ The KEGML design contains many significant constraints from both Pandoc and the 
 * Languages should generally be separated by blocks --- especially `div`
 * A single space is optional between opening `div` and `fenced`
 * Div blocks should take advantage of initial cap readability `::: Warning`
+* Div block opening just be followed by blank line
+* Div block closing must be preceded by blank line
 * No `heading` attributes
 * A `verbatim` span must never contain a backtick (use `bracketed`, etc. instead)
 * All spans are semantic (like HTML5 `<i>`, `<b>`, think novels)
