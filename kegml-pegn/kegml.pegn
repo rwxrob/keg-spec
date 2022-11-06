@@ -2,7 +2,7 @@
 # Copyright 2022 Robert S Muhlestein (rob@rwx.gg)
 # Licensed under Apache-2
 
-Grammar       <-- Title Block+ Refs Tags?
+Grammar       <-- Title Block+ Tags?
 Title         <-- '#' SP <(rune){1,70}>
 
 Block         <-- Include / Bulleted / Numbered / Figure / Fenced
