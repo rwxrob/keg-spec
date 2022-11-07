@@ -7,3 +7,4 @@ deliberately made upper case:
 * **SHOULD**
 * *RECOMMENDED*
 
+* [AP style preferred](/ap-style-preferred)
