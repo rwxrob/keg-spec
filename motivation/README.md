@@ -43,5 +43,6 @@ we are committed to proving that a better, world-wide knowledge network
 --- one that can never be censored or stopped --- is possible, even if
 we are the only ones who use it.
 
-* [Enable Good Content](/enable-good-content)
+* [Enable good content](/enable-good-content)
 * [Cypherpunk Manifesto](/cypherpunk-manifesto)
+* [Refactoring knowledge](/refactoring-knowledge)
