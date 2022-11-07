@@ -11,7 +11,7 @@ The *Knowledge Exchange Graph* is a secure, performant, grassroots, decentralize
 * [Design Considerations](/design-considerations)
 * [Domain Model](/domain-model)
 * [KEG Markup Language (KEGML)](/kegml)
-* [Extended KEG Markup Language (KEGMLX)](/kegmlx)
+* [Expanded KEG Markup Language (KEGMLX)](/kegmlx)
 * [Aggregation and Attribution](/aggregation-and-attribution)
 
 [KEG.yaml]: KEG.yaml
