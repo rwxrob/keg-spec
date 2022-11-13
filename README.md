@@ -1,4 +1,4 @@
-# Knowledge Exchange Graph (KEG) Specification
+# Knowledge Exchange Graph (KEG) Specification 2023-01
 
 *State of this specification is current a working draft (see
 [KEG.yaml]).*
