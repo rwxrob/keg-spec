@@ -1,6 +1,12 @@
 # KEG Node
 
-Also known as a "knowledge node" or just "node". The term *node* comes form the graph data structure and mathematics. A node is the vertex at which other lines, links, or edges meet. It is the most granular and composable unit of the KEG network.
+The term **KEG node** (aka "knowledge node" or "node") comes from a **graph data structure** in which a **graph node** is the vertex at which other lines, links, or edges meet. There are different types of graphs including a **rooted node tree** which takes the form of a top-down hierarchy commonly found in a document table of contents or file directory structure. The Web and social media networks are non-hierarchical graphs where the more links to a given node create a greater weight. This is how the basic idea behind search engine optimization, for example.
+
+A **keg** is  rooted node tree and a **node** is a unit of knowledge content that optionally refers (and/or includes) other nodes.
+
+Every **keg** is a graph data structure where each node contains knowledge content. A collection of kegs is also a graph data structure where the individual kegs each become a branch of a larger graph data structure.
+
+It is the most granular and composable unit of the KEG network.
 
 A KEG node is simply a directory that MUST contain one of the identifying structured content files.
 
