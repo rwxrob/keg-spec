@@ -1,4 +1,4 @@
-# KEG Directory
+# KEG directory
 
 A KEG directory (also referred to as a "keg site" or just "a keg") MUST contain one or more [KEG nodes](/keg-node), each with a uniquely identifying directory name within the KEG directory itself.
 

@@ -4,7 +4,7 @@ KEG primarily refers to the unit of content organization and exchange over the "
 
 "Here's my KEG with that content in it" is something one could say handing over a URL pointing to a KEG or a USB drive with the KEG stored on it. The main point of KEG is the encapsulation of primarily written content organized in a simple, predictable way to promote standardized creation, management, and sharing.
 
-* [KEG Directory](/keg-directory)
-* [KEG User](/keg-user)
-* [KEG URL](/keg-url)
-* [KEG Public Key](/keg-public-key)
+* [KEG Directory](/15)
+* [KEG User](/21)
+* [KEG URL](/0)
+* [KEG Public Key](/46)
