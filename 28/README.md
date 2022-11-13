@@ -46,3 +46,4 @@ we are the only ones who use it.
 * [Enable good content](/enable-good-content)
 * [Cypherpunk Manifesto](/cypherpunk-manifesto)
 * [Refactoring knowledge](/refactoring-knowledge)
+* ["It would be so much easier if everyone could read my database."](/58)
