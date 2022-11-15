@@ -1,10 +1,7 @@
-# KEGML Parsing Expression Grammar Notation (PEGN)
+# KEGML Specification in PEGN
 
-KEGML is specified using PEGN created by Rob Muhlestein in 2020 to
-address limitations of Brian Ford's PEG language and the many
-inconsistencies in PEG implementations..
+KEGML is specified using PEGN[^55]]
 
-* Parsing Expression Grammar Notation (PEGN)  
-  https://pegn.dev
+* [!PEGN File](kegml.pegn)
 
-* [PEGN File](kegml.pegn#include)
+[^55]: Muhlestein, Robert S. "Parsing Expression Grammar Notation (PEGN)" (2019). https://pegn.dev

@@ -1,10 +1,12 @@
-# Specification Style and Conventions
+# Specification style and conventions
 
-The following words are reserved with special meaning and have been
-deliberately made upper case:
+The following words are reserved with special meaning and have been deliberately made upper case:
 
 * **MUST**
+* **MUST NOT**
 * **SHOULD**
-* *RECOMMENDED*
+* **SHOULD NOT**
+* **MAY**
+* **RECOMMENDED**
 
-* [AP style preferred](/ap-style-preferred)
+* [AP style preferred](/6)

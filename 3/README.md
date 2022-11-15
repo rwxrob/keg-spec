@@ -1,40 +1,38 @@
-# KEGNODES index file
+# Nodes index file
 
-* A file named `KEGNODES` MUST exist in the KEG root directory.
-* `KEGNODES` file MUST contain one line for every KEG node.
-* `KEGNODES` MUST use standard UTF-8 encoding.
-* `KEGNODES` MUST NOT contain blank lines.
-* `KEGNODES` MUST use line-feed (`\n`) only to end lines.
-* A `KEGNODES` line MUST contain three initial fields: **isosec**, **type**, **identifier**.
-* A `KEGNODES` line MAY contain any valid KEG node title after first three fields.
-* A `KEGNODES` line MUST be terminated by a single line feed (`\n`).
-* `KEGNODES` fields MUST be separated by a single space.
-* `KEGNODES` file MUST be sorted by first field (isosec).
-* `isosec` MUST match the approximate second of last node update.
-* `isosec` MUST NOT contain a `T`.
-* `type` MUST be one of `t`, `d`, `f`, `D`, `g`, `G`, `F`, `T`, `R`.
-* `t` MUST be reserved for "text"
-* `d` MUST be reserved for "data"
-* `f` MUST be reserved for "figure"
-* `D` MUST be reserved for "data, text" (ex: data with explanatory text)
-* `g` MUST be reserved for "data, figure" (ex: data displayed as figure)
-* `G` MUST be reserved for "figure, data" (ex: figure derived from data)
-* `F` MUST be reserved for "figure, text" (ex: figure with commentary)
-* `T` MUST be reserved for "text, figure" (ex: text with illustration)
-* `R` MUST be reserved for "text, data, figure" (ex: rich, equal priority)
-* `identifier` MUST be an integer without leading zeros.
+* A file named `dex` MUST exist in the KEG root directory.
+* The index MUST contain one line for every KEG node.
+* File MUST use standard UTF-8 encoding.
+* File MUST NOT contain blank lines.
+* File MUST use line-feed (`\n`) only to end lines.
+* Lines MUST contain three initial fields: **isosec**, **type**, **identifier**.
+* Lines MAY contain any valid KEG node title after first three fields.
+* Creators and apps SHOULD start titles on same line column for easy reading.
+* Lines MUST be terminated by a single line feed (`\n`).
+* Lines MUST be separated by a single space except after third field.
+* After the third field 1-8 spaces are allowed to facilitate title alignment.
+* File MUST be sorted by first field (isosec).
+* Field 1 (isosec) MUST match the approximate second of last node update.
+* Field 1 (isosec) MUST NOT contain a `T` or any other punctuation (20060102030405).
+* Field 2 (type) MUST be one of `t`, `d`, `f`, `g`.
+* Type `t` MUST be reserved for "text"
+* Type `d` MUST be reserved for "data"
+* Type `f` MUST be reserved for "figure"
+* Type `g` MUST be reserved for "graphic" (ex: data displayed as figure)
+* Field 3 (identifier) MUST be an integer without leading zeros.
 
 Note in this sample that the fields are very easily sorted and searched and that the title is entirely optional (but recommended to facilitate searches).
 
 ```kegnodes
-20221031180218 t 3 KEGNODES index file
-20221031180317 D 4 Beautiful simplicity of Luhmann's identifiers
-20221031180317 R 5
+20221031180218 t 3   KEG nodes index file
+20221031180317 g 4   Beautiful simplicity of Luhmann's identifiers
+20221031180304 t 5
+20221031180345 t 300 Much newer than others, after one with no title
 ```
 
-Creating and maintaining a `KEGNODES` file takes nothing more than paper, pencil, and an accurate watch.
+Creating and maintaining an `index` file takes nothing more than paper, pencil, and an accurate watch.
 
-Creating a `KEGNODES` initially (with all text types `t`) is trivial from any modern UNIX shell because the KEG directory already contains most of the index information.
+Creating an `index` initially (with all text types `t`) is trivial from any modern UNIX shell because the KEG directory already contains most of the index information.
 
 ```
 while read -r readme; do

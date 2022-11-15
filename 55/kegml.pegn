@@ -3,7 +3,10 @@
 # Licensed under Apache-2
 
 Grammar       <-- Title Block+ Tags?
-Title         <-- '#' SP <(rune){1,70}>
+#Title         <-- '#' SP <(rune){1,70}>
+Title         <-- '#' SP < (Inflect / Verbatim / Math / Deleted / SQuoted / DQuoted / LongDash / ShortDash / Ellipsis / Plain)+ >
+
+(rune){1,70}>
 
 Block         <-- Include / Bulleted / Numbered / Figure / Fenced
                   / Tex / Quote / Raw / Div / Refs / Para
@@ -11,9 +14,13 @@ Block         <-- Include / Bulleted / Numbered / Figure / Fenced
 Bullet        <-- '*' SP Para
 Number        <-- '1.' SP Para
 
-Span          <-- Inflect / Bold / Verbatim / Math / Deleted
+Span          <-- Inflect / Beacon / Lede / Verbatim / Math / Deleted
                   / SQuoted / DQuoted / Bracketed / Mustached / Braced
                   / Angled / URL / LongDash / ShortDash / Ellipsis / Plain
+
+Paragraph     <-- Inflect / 
+
+LedePara      <-  &Lede Para
 
 NodeLink      <-- # 
 

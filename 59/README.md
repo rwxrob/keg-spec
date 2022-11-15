@@ -1,3 +1,8 @@
-# KEG node 0
+# Zero node
 
-KEG node 0 is a special, reserved id to which links can refer when a node has not yet been created. This way a node 0 can be created to explain this situation to those who follow it so they don't get a broken link. When rendered this also provides a hook for renderers to identify allowing them to link to a more generic search of the web for the text of the link in question.
+* A **keg** MUST include a **node** with an id of 0 called a **zero node**.
+* A **zero node** MUST must be used for links to content not yet created.
+* A **zero node** MUST explain when content can be expected.
+* A **zero node** MAY itemize planned content by title and priority.
+
+The required **zero node** provides details to the content user as to when planned content is to be expected. This gives content creators something to link to rather than not linking at all. These links can then be easily found within the content later and updated to point to a **node** with an ID other than 0.

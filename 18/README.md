@@ -1,11 +1,13 @@
-# KEGML Links
+# Link
 
-KEGML strictly defines different types of links and expressly blocks all hypertext linking to external content. Links also have structural meaning for practical use that KEG tools can leverage during content aggregation, searching, and conversion into other publishing formats.
+* A KEGML **link** MUST be one of **node link**, **file link**, or **include link**.
+* A KEGML **footnote** MUST NOT be considered a link (although SHOULD contain URLs).
 
-* [Link Restrictions](restrictions)
-* [Problems with Web Links](/problems-with-web-links)
-* [Node Include Links](/kegml-link-node-include)
-* [Node Reference Links](/kegml-link-node-ref)
-* [File Include Links](/kegml-link-file-include)
-* [Bibliographic Note Links](/kegml-link-note)
-* [External Link List Block](/kegml-link-external)
+KEGML specifies Markdown-like links and expressly blocks all hypertext linking to external content. Links also have structural meaning for practical use that KEG tools can leverage during content aggregation, searching, and conversion into other publishing formats.
+
+* [Problems with Web links](/18)
+* [Differences from Markdown](/57)
+* [Node links](/0)
+* [File links](/0)
+* [Include links](/24)
+* [Sample](sample.md)

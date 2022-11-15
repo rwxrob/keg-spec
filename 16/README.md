@@ -1,3 +1,5 @@
-# KEGMLX 10-Rune Fences and Divs
+# KEGMLX 10-rune fences and divs
 
-KEGMLX regularly includes KEGML **fence blocks** and **div blocks** that have a maximum of eight runes in their opening and closing tokens (not counting the **attributes**. Therefore, KEGMLX always used 10 runes to avoid any conflict.
+* KEGMLX fences and divs use 10 or more runes.
+
+This allows KEGMLX composites to safely include all possible content from a KEGML file.

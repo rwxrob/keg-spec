@@ -1,18 +1,15 @@
-# KEGML Reference Links
+# No Markdown reference links (except footnotes)
 
-A **reference link** is text that refers to another node or file within the current keg. The text is **bracketed** and that same bracketed text followed by a colon, a space, and the target node or file is included in a **reference block** anywhere in that same `README.md` file.
+* A **KEGML document** MUST NOT contain Markdown reference links.
 
-```kegml
-This is a paragraph with a reference link pointing to a [node].
+The following is not allowed in KEGML:
 
-[node]: /some-node
+```md
 
-Here is another ref link pointing to a [local file].
+Here is a [reference link] within a paragraph.
 
-[local file]: some-file.txt
-
-And another pointing to a [local node] within this node directory.
-
-[local node]: local-node-dir-with-own-readme
-
+[reference link]: /some-thing
 ```
+
+Regular markdown allows for reference links the targets of which are in a separate block later in the document. These make reading Markdown source much easier when extremely long URLs are allowed as link targets (such as with [the Web](/2)). With KEGML, however, such links are not needed since all inline link targets are extremely short.
+

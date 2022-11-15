@@ -1,8 +1,8 @@
 # Tim Berners-Lee warned against "slugs" in the 90s
 
-Ever look at a Medium URL? They're just stupid. Why?
+Ever look at a Medium URL? They are rather broken. Why?
 
-Here's Tim Berners-Lee calling this out back in the 90s way before the Web became filled with idiotic, broken links and old content:
+Here is a quote from Tim Berners-Lee calling this out back in the 90s way before the Web became filled with poorly conceived link URL formatting prioritizing "good SEO" at the time:
 
 > Your example is a bad URL -- but not just because it has both an id and a "slug" (the abbreviated, hyphenated form of the page title). Putting the page title into your URL is problematic in the long term. Content will change over time. If you ever change the title of that blog post, you'll be forced to choose between keeping the old URL, or changing the URL to match the new title. Changing the URL will break any previous links to that page; and not changing it means you'll have a URL that doesn't match the page. Neither is good for the user. Better to just go with www.myblog.com/posts/123.
 >

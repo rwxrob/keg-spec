@@ -1,4 +1,4 @@
-# KEG Node README.md File
+# README.md
 
 The **node** `README.md` file MUST be valid KEGML to be considered a node at all.
 

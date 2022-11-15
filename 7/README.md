@@ -1,11 +1,25 @@
-# Custom KEG Data
+# Custom data
 
-Any KEG structured data file that allows maps (aka "objects", "dictionaries") may contain custom data specified by the owner of any domain (including subdomains) on the Internet. These custom data may be used by anyone, anywhere --- allowing the creation of data models used globally --- but only the `KEG.yaml` file at the root URI for that domain is able to specify the scheme for those custom data.
+* A **domain owner** MUST be someone with control of an Internet domain.
+* A **domain owner** MAY provide custom data in the `keg` **info file**.
+* A **custom data** section in **info file** MUST use domain as key.
+* A **domain owner** MUST provide a keg at identifying domain as authoritative schema.
 
-Specification is accomplished by adding the reserved `schema` key to another map with a key matching the root domain. The reserved `schemaType` field allows different models for specifying different schema types over time, but the structured data format will always be KEG simplified YAML. This flexibility allows the KEG network to grow and adapt over time.
+Any Internet **domain owner** can provide custom data that may be used by anyone, anywhere --- allowing the creation of data models to be used organically and globally.
+
+Specification of custom data schemas is accomplished as follows:
+
+1. Create an **authoritative keg** at the domain (or subdomain)
+1. Add a section to the `keg` **info file** matching the domain name exactly.
+1. Add a subsection of the domain matching the exact name of the schema.
+1. Add a `schemaType` identifier (such as `json-schema-2020-12`).
+1. Add a `schema` subsection.
+1. Add the schema rule definitions under the `schema` subsection.
+
+The reserved `schemaType` field allows different models for specifying different schema types over time, but the structured data format will always be KEG **simplified YAML**. This flexibility allows the KEG network to grow and adapt over time.
 
 ```yaml
-keg.pub:
+keg.pub.listing:
   schemaType: json-schema-2020-12
   schema:
     ...

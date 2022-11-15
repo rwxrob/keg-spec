@@ -1,22 +1,9 @@
-# KEGML link restrictions
+# KEGML link differences from Markdown
 
-```pegn
-Name        <- FileName / NodeName
-RootLink    <- '/' Name
-ParentLink  <- '../' Name
-LocalLink   <- Name
-```
+* A KEGML **link** MUST NOT link to content outside of its keg.
+* Markdown angle-bracketed links MUST NOT be supported in KEGML.
 
-A KEGML link within a **node** `README.md` file MUST NOT point to anything outside of the **keg** to which it belongs.
+Web URLs (or any other network protocol URLs) are just text in URL form.
 
-A **relative link** MUST NOT point to anything more than one level of depth distance from the file containing it.
-
-Therefore, a link MUST be one of three types: root, parent, local.
-
-A **root link** MUST begin with a slash.
-
-A **parent link** MUST begin with two dots and a slash.
-
-A **local link** MUST NOT have any prefix (unlike HTML and Markdown).
-
-Local includes both files and other node directories underneath.
+* [Omit reference links](/51)
+* [URLs must only appear in lists and footnotes](/74)

@@ -1,4 +1,4 @@
-# KEGMLX Unlimited Headings
+# KEGMLX unlimited headings
 
 Since expanded KEGML is meant to be the composition of all the nodes in a KEG each node must be added as a subheading of the one including it and therefore will have its heading bumped to a RECOMMENDED maximum of six.
 

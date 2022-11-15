@@ -1,4 +1,4 @@
-# Enable Good Content
+# Enable good content creators
 
 > "The level of technical content quality is inversely proportional to the prolificness of the author. This is why it is so difficult and valuable to uncover those few who actually know what they are talking about — because they do it every day for hours a day — and who are willing and able to write about it." (TJ Halowaychuk)
 

@@ -1,19 +1,9 @@
-# Secondary Nodes
+# Independent nodes
 
-Secondary nodes are those that are not
-[included](/kegml-link-node-include) anywhere within the KEG. Secondary
-nodes are therefore assumed to have content that is secondary to the
-included content.
+* An **independent node** MUST NOT have any other nodes that include it.
+* An **independent node** MUST NOT be the target of **node links**.
+* An **independent node** MUST be included in the `dex` **index file**.
 
-Aggregation tools handle this secondary content in whatever way seems
-best for the tool and final output, perhaps into an appendix or section
-of its own so that links to it elsewhere in the KEG will resolve to
-them. Secondary nodes MUST be included, however. Their semantic
-importance is too great to simply ignore (unlike [orphan
-nodes](/orphan-nodes) that are often excluded entirely from
-aggregation)
+An **independent node** is one on which no other nodes depend. Content creators can freely move such a node from one keg to any other. It is common during the content creation process to create several independent nodes during creative **mind mapping** sessions and then later to identify the relationships and organize the nodes into larger compositions. This technique is at the core of Luhmann's Zettelkasten method[^26].
 
-Secondary nodes MUST also have semantic priority over [bibliographic
-notes](/kegml-link-note) even though they are very similar in purpose.
-In fact, often a bibliographic note will grow large enough to warrant
-its own secondary or included node instead.
+[^26]: https://luhmann.surge.sh

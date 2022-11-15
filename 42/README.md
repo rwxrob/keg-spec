@@ -1,28 +1,28 @@
-# KEGML Differences from Markdown
+# KEGML differences from Markdown
 
 The KEGML design contains many significant constraints from both Pandoc and the original Markdown out of necessity and to address glaring omissions. The strictness of these limitations is very much by design since they produce the simplest, most compatible knowledge source capable of being represented in any number of ways through rendering later.
 
 * Paragraphs must never contain single line returns (soft wraps)
 * Paragraphs may contain hard wraps (two line returns)
 * No escaping anything with backslash at all (overcomplicates)
-* Only reference links in paragraphs for easier reading
+* Only node links in paragraphs for easier reading
+* No URLs allowed in anything but a footnote
 * Only printable UNICODE code points and simplified white-space allowed
 * White-space consists of `space` or `newline` only
 * A `newline` is always a `\n` (never preceded by a `\r`)
 * Blocks delimited with one or more blank lines
 * A *blank line* is any line containing only white space
-* No headings (`title` is it's own block, and must be first)
+* Only the `title` heading is it's own block, and must be first
 * Title must not exceed 72 runes including the `# ` prefix
-* Richer variation of spans including punctuated (brackets).
+* Richer variation of spans including smart punctuation
 * Repurposed blocks as include lists
-* Include node link: `* [Some Title](/node)`
+* Include node link: `* [Some Title](/23)`
 * Include file link: `* [Some File](file.yaml)`
-* Specified reserved suffixes: `md`, `yaml`, `json`, `csv`, `tsv`
 * Nodes must be included at that location with that title
-* Files must be included with title exactly as they are in a `semblk` with suffix
+* Files must be included with title exactly as they with suffix as class
 * Limited footnote support (from Pandoc)
 * Footnotes have no line returns (link to node if need more)
-* The `tags` block is a Markdown `raw` but must be last
+* Special "meta matter" final block type (indented YAML, no fence)
 * Only `semblk` and `quote` allows inclusion of other blocks
 * Full support for Pandoc *regular* attributes (only, no "raw attributes)
 * Only `verbatim`, `bracketed` span and `div`, `fenced` blocks support attributes
@@ -38,11 +38,11 @@ The KEGML design contains many significant constraints from both Pandoc and the 
 * Div block closing must be preceded by blank line
 * No `heading` attributes
 * A `verbatim` span must never contain a backtick (use `bracketed`, etc. instead)
-* All spans are semantic (like HTML5 `<i>`, `<b>`, think novels)
 * Spans composed of `fields` of printable UNICODE code points
+* Fields are composed of `words`
 * Only one Refs block for a single KEG node (and it must be above tags)
 * Fields composed of `letters`, `punc`, `printable` (hyphenated terms, etc.)
-* No tables whatsoever (better as DATA node instead)
+* Only GitHub flavored tables supported
 * No separators (horizontal rules)
 * No nested list items
 * No extended (long) lists
@@ -54,7 +54,6 @@ The KEGML design contains many significant constraints from both Pandoc and the 
 * No HTML (not even for "comments")
 * Images limited to own block
 * Full support for inline and raw LaTeX and MathJax
-* Unspecified title-to-id (slug) conversion
 
-**Images MUST NOT be included in KEGML.** Unlike most other flavors of Markdown, KEGML deliberately omits images of any kind. This is because all images MUST be contained within their own *figure nodes*. This promotes the use of images to convey something that cannot otherwise be described with text. Such a limitation promotes the widest possible range of participants and eliminates superfluous decoration which bloats content and complicates the publishing process.
+Other than a single **figure** or **graphic** images MUST NOT be included in KEGML. Unlike most other flavors of Markdown, KEGML deliberately omits images of any kind. This is because all images MUST be contained within their own *figure nodes*. This promotes the use of images to convey something that cannot otherwise be described with text. Such a limitation promotes the widest possible range of participants and eliminates superfluous decoration which bloats content and complicates the publishing process.
 

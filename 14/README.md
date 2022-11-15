@@ -1,4 +1,4 @@
-# Formerly Known As
+# Formerly known as
 
 Here are some other official names used for the KEG initiative since
 2016:
