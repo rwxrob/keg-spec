@@ -1,6 +1,6 @@
 # KEGML Specification in PEGN
 
-KEGML is specified using PEGN[^55]]
+KEGML is specified using PEGN[^55]
 
 * [!PEGN File](kegml.pegn)
 
