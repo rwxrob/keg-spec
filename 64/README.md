@@ -6,12 +6,11 @@ Optional indexes of different kinds of KEG content allow a **content creator** o
 * An **index node** ID MUST match the plural of **KEGML content type** contained.
 * The **title** of the **index node** MAY be any valid title.
 * Content creators MAY assign semantic meaning to **KEGML content types**.
+* Content creators MAY use the same markdown links format of `dex.md`.
 
-While the `dex` file does contain all keg titles. It is sometimes desirable to have a `titles` index node as well to present that content in more consumable, render-able ways. For example, when rendering an `index.html` file for each `README.md` file in every node.
+While the `dex.md` file does contain all keg titles. It is sometimes desirable to have a `titles` index node as well to present that content in more consumable, render-able ways. For example, when rendering an `index.html` file for each `README.md` file in every node.
 
-In most cases, an index node will have both a `data.*` file and a rendered `README.md` file (and some people will included an `index.html` file as well).
-
-Another example is a terminology index that maps to the `bold` type.
+Another example is a terminology index that maps to the **beacon** type.
 
 The [**zero node**](/59) can double as an index node containing all the nodes that link to it (instead of the content being planned).
 
