@@ -1,26 +1,80 @@
-# KEGML (v0.1.0) keg.pub/spec/kegmark.pegn
+# KEGML spec.keg.pub/2023-01/kegml
 # Copyright 2022 Robert S Muhlestein (rob@rwx.gg)
-# Licensed under Apache-2
+# SPDX-License-Identifier: Apache-2
+# Include spec.pegn.dev/2023-01/classes.pegn
+# Include spec.pegn.dev/2023-01/tokens.pegn
 
-Grammar       <-- Title Block+ Tags?
-#Title         <-- '#' SP <(rune){1,70}>
-Title         <-- '#' SP < (Inflect / Verbatim / Math / Deleted / SQuoted / DQuoted / LongDash / ShortDash / Ellipsis / Plain)+ >
+# NodeBlocks divides the major parts of a KEGML document into blocks
+# without further consideration for how those blocks are divided.  This
+# parsing is generally done as the first pass. Each is then parsed
+# individually as needed for additional granularity:
+#
+#     * IncBlock   -> Includes
+#     * BulBlock   -> Bulleted
+#     * NumBlock   -> Numbered
+#     * FigBlock   -> Figure
+#     * QuoteBlock -> Quote
+#     * FenBlock   -> Fenced
+#     * DivBlock   -> Division
+#     * FootBlock  -> Footnotes
+#     * MathBlock  -> MathBlock
+#     * ParaBlock  -> Paragraph
+#     * Indented   -> Indented
+#
+# Note that only enough of the beginning of a block is checked to
+# identify the potential beginning of such a block and the rest is
+# assumed to be a block without any validation of syntax validation.
+# Use Node instead when such validation is required.
 
-(rune){1,70}>
+NodeBlocks <-- Title Block* FootBlock?
+Block      <-  IncBlock / BulBlock / NumBlock / FigBlock /
+               QuoteBlock / MathBlock / FenBlock / DivBlock /
+               Indented / ParaBlock
 
-Block         <-- Include / Bulleted / Numbered / Figure / Fenced
-                  / Tex / Quote / Raw / Div / Refs / Para
+Title      <-- '#' SP < (rune){1,70} > EndBlock
+BulBlock   <-- < ('*' / '+' / '-') SP (!EndBlock rune)+ > EndBlock
+NumBlock   <-- < '1.' SP (!EndBlock rune)+ > EndBlock
+FigBlock   <-- < '![' (!EndBlock rune)+ > EndBlock
+QuoteBlock <-- < '>' SP (!EndBlock rune)+ > EndBlock
+FootBlock  <-- < '[^' SP (!EndBlock rune)+ > EndBlock
+MathBlock  <-- < '$$' (!(LF '$$' EndBlock) rune)+ LF '$$' > EndBlock
 
-Bullet        <-- '*' SP Para
-Number        <-- '1.' SP Para
+FenBlock   <-- < <:tok ('~' / BKTICK){3,8} >
+                 (!(LF tok EndBlock) rune)+ LF tok
+               > EndBlock
 
-Span          <-- Inflect / Beacon / Lede / Verbatim / Math / Deleted
-                  / SQuoted / DQuoted / Bracketed / Mustached / Braced
-                  / Angled / URL / LongDash / ShortDash / Ellipsis / Plain
+DivBlock   <-- < <:tok ':'{3,8} >
+                 (!(LF tok EndBlock) rune)+ LF tok
+               > EndBlock
 
-Paragraph     <-- Inflect / 
+Indented   <-- < SP{4} (!EndBlock rune)+ > EndBlock
+               > EndBlock
+ParaBlock  <-- < !SP (!EndBlock rune)+ > EndBlock
 
-LedePara      <-  &Lede Para
+# ---------------------------------------------------------------------
+
+# Node divides up the blocks into their semantic parts producing a much
+# richer AST albeit more work to parse and traverse.
+
+Node       <-- Title SemBlock* Footnotes?
+SemBlock    <- Includes / Bulleted / Numbered / Figure / Fenced /
+               Latex / Quote / Division / Indented / Paragraph
+
+# ---------------------------------------------------------------------
+
+IncUnfold  <-- '+ ' Link
+IncFold    <-- '- ' Link
+
+# ---------------------------------------------------------------------
+
+# TODO handle nested lists
+
+Bullet     <-- ('*' / '-' / '+') SP Para
+Number     <-- '1.' SP Para
+
+Span       <-- Inflect / Beacon / Lede / Verbatim / Math / Deleted / Plain
+
+LedePara   <--  &Lede Para
 
 NodeLink      <-- # 
 
@@ -62,5 +116,4 @@ Word          <-- uprint+
 hashtag       <- '#' / uFF03
 
 ws            <- LF / SP
-rune          <- ws / uprint
 

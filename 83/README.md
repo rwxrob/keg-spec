@@ -1,4 +1,4 @@
-# "Front-matter" was never actually front-matter
+# "Front matter" was never actually front matter
 
 The term **front matter** has a very specific meaning to the writing and publishing world. It is the content at the beginning of the content before the actual content. There is **end matter** as well that comes after the main **body** of content.
 

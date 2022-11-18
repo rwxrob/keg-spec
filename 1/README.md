@@ -1,9 +1,10 @@
-# Simple integer node identifiers
+# Node identifier
 
-* KEG node identifiers MUST be simple integers beginning at 1.
-* KEG node identifiers MUST NOT be reused when content is deleted.
-* KEG node titles and content MAY change within a node uniquely identified by an integer.
-* KEG node identifiers MUST be included in the [KEGNODES index file](/3).
+* A KEG **node** MUST have an identifier that is unique to the keg containing the node.
+* A **node identifier** MUST NOT change when a node **title** changes.
+* A node identifier MUST be an incremental integer starting at 1.
+* A node identifier MUST NOT be reused when previously published content is deleted.
+* A node identifier MUST be included in the **nodes index file**.
 
 Integer node identifiers make ridiculously short URLs when publishing to the **KEG Web**.
 
@@ -12,9 +13,11 @@ https://rwx.gg/45
 rwx.gg/45
 ```
 
-This solves problems that might not even be thought of, like limitations on size when posting to IRC chat (such as Twitch).
+Node identifiers are modeled after primary keys in most database systems. Importing a node into a database is therefore rather trivial when the need arises.
 
-Numbers are easy to remember, take very little space, and are guaranteed not to break when the title changes. Creating a new node is trivial using this method. For example, here's all that is required on a UNIX system to create and begin editing a new node:
+The simplicity and size of an integer identifier solves unanticipated problems such as posting KEG Web URLs to forums and social media applications with limitations on length.
+
+Numbers are easy to remember, take very little space, and are guaranteed not to break when the title changes. Creating a new node is trivial using this method.
 
 ```
 cd $KEG

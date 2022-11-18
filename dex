@@ -1,82 +1,95 @@
-20221115045446 t 3  Nodes index file
-20221115044846 t 91 Soft returns cause viewing and diff problems
-20221115044758 t 88 Simplified YAML structured data
-20221115044621 t 90 Publication, distribution, and exchange strategies
-20221115043446 t 89 Leave indexing up to apps and developers
-20221115041933 t 25 File include link
-20221115041459 t 87 No support for tab or carriage return
-20221115041238 t 86 Only one heading per node README.md file
-20221115040626 t 1  Simple integer node identifiers
-20221115040506 t 85 Contextual semantic difference for same KEGML markup syntax
-20221115035934 t 78 Node reference
-20221115035915 t 77 Node include link
-20221115035908 t 76 Ignored title include link
-20221115035841 t 75 KEGML element: inflect span
-20221115035807 t 70 Creator authentication and encryption
-20221115035756 t 7  Custom data
-20221115035750 t 69 User keg
-20221115035338 t 68 Content creator
-20221115035248 t 67 Difference between follow/avoid in user and other kegs
-20221115035048 t 65 Universal Resource Locators (URL)
-20221115034747 t 64 Optional index nodes
-20221115034733 t 63 KEG app
-20221115034634 t 59 Zero node
-20221115034624 t 58 "It would be so much easier if everyone could read my database."
-20221115034546 t 57 KEGML link differences from Markdown
-20221115034201 t 52 Div block
-20221115033952 t 51 No Markdown reference links (except footnotes)
-20221115033930 t 50 KEG Markup Language (KEGML)
-20221115033855 t 55 KEGML Specification in PEGN
-20221115032527 t 5  Aggregation and attribution
-20221115031630 t 84 isosec
-20221115031354 t 42 KEGML differences from Markdown
-20221115031018 t 82 Meta matter block
-20221115023647 t 83 "Front-matter" was never actually front-matter
-20221115021500 t 41 README.md
-20221115021409 t 81 Title span restrictions
-20221115015200 t 40 Footnote
-20221115014213 t 39 Node
-20221115013223 t 37 Specification style and conventions
-20221115013026 t 35 KEGMLX unlimited headings
-20221115013013 t 32 Refactoring knowledge
-20221115012926 t 31 Software composition and aggregation
-20221115011317 t 29 User schema
-20221115004948 t 6  AP style preferred
-20221115004454 t 80 Sentence case is preferred for titles
-20221115004059 t 26 Independent nodes
-20221114234825 t 24 Include link
-20221114234502 t 79 Lede
-20221114225109 t 38 Determining title of included content
-20221114221853 t 23 HTML5 i Element
-20221114212734 t 27 HTML5 b Element
-20221114211545 t 21 KEG User
-20221114211540 t 20 ID vs title
-20221114211440 t 18 Link
-20221114211414 t 74 KEGML URLs must only appear in lists and footnotes
-20221114165813 t 48 Info File
-20221114164850 t 73 Numbered lists restricted to 1.
-20221114162240 t 72 Optionally using bold for linking to terms
-20221114160002 t 15 Directory
-20221114152331 t 71 Subscriptions with encrypt-sign authentication
-20221114005904 t 28 Motivation
-20221114004132 t 66 XKCD's Randall Munroe understand Web URLs
-20221114002850 t 2  Tim Berners-Lee warned against "slugs" in the 90s
-20221113233055 t 10 Domain Model
-20221113231038 t 17 Expanded KEGML (KEGMLX)
-20221113215854 t 16 KEGMLX 10-rune fences and divs
-20221113214646 t 13 KEG is for writers
-20221113214040 t 0  Sorry, planned but not yet available
-20221113202953 t 62 Bold used for terminology
-20221113195157 t 61 Unlinked files
-20221113182858 t 14 Formerly known as
-20221113182540 t 12 Enable good content creators
-20221113182444 t 11 Dynamic nodes
-20221113174717 t 60 Single line paragraphs promote better paragraph content
-20221113093142 t 4  Beautiful simplicity of Luhmann's identifiers
-20221109210055 t 36 Referring to "keg" vs "KEG"
-20221109182759 t 43 Graph data structure
-20221107175259 t 49 Second brain
-20221105024224 t 45 Div identifiers
-20221105002639 t 8  Cypherpunk Manifesto
-20221031141902 t 46 KEG Public Key
-20221031141801 t 30 KEG Universal Resource Locator (URL)
+20221118053341 99 Beacon
+20221118053341 89 Leave indexing up to apps and developers
+20221118053304 38 Query code
+20221118050940 84 Isosec
+20221118050918 82 Meta matter
+20221118050557 81 Title span restrictions
+20221118050212 79 Lede span
+20221118044312 78 Node reference
+20221118044124 77 Node include link
+20221118043536 6 AP style preferred
+20221118043523 57 KEGML link differences from Markdown
+20221118043322 55 KEGML Specification in PEGN
+20221118043302 52 Division block
+20221118043222 50 KEG Markup Language (KEGML)
+20221118043202 48 KEG Info File
+20221118042426 45 Division identifier
+20221118042341 42 KEGML differences from Markdown
+20221118041232 39 Node
+20221118040021 43 Graph data structure
+20221118035307 30 Universal Resource Locator (URL)
+20221118033612 3 KEG index file
+20221118033243 108 Node update
+20221118032843 29 User schema
+20221118032818 26 Independent nodes
+20221118032731 25 File include link
+20221118032641 24 Include link
+20221118032546 21 User
+20221118032408 20 ID vs title
+20221118032217 18 Link
+20221118032142 17 Expanded KEGML (KEGMLX)
+20221118031944 103 Simple quotes preferred
+20221118031938 102 Out of spec
+20221118031843 100 Rune
+20221118031819 10 Domain Model
+20221118031813 1 Node identifier
+20221118031605 15 keg
+20221118031409 36 Referring to "keg" vs "KEG"
+20221117214943 74 In KEGML, a URL must only appear in footnote as citation or list item
+20221117090848 107 KEG Web
+20221117080440 83 "Front matter" was never actually front matter
+20221117060524 105 Quote block limitations
+20221116091328 91 Soft returns cause viewing and diff problems
+20221116091305 85 Contextual semantic difference for same KEGML markup syntax
+20221116091109 69 User keg
+20221116090823 49 Second brain
+20221116090536 2 Tim Berners-Lee warned against "slugs" in the 90s
+20221116072216 104 Smart punctuation is not specified, but preferred
+20221116055353 90 Publication, distribution, and exchange strategies
+20221116051847 72 Optionally using bold for linking to terms
+20221116032146 27 Beacon span
+20221116031733 16 KEGMLX 10-rune fences and divs
+20221116031546 12 Enable good content creators
+20221115225411 92 One beacon per term, per node
+20221115221944 97 Advantage of beacon terms over hyperlinks
+20221115221419 101 Heavily inspired by "mind mapping" applications and "zettelkasten"
+20221115215622 86 Only one heading per node README.md file
+20221115212408 62 Bold used for terminology
+20221115184854 93 Content path
+20221115183720 96 Acronyms are terms with beacons and nodes
+20221115182255 95 URL
+20221115181628 94 Citation
+20221115050603 51 No Markdown reference links (except footnotes)
+20221115045728 40 Footnote
+20221115044758 88 Simplified YAML structured data
+20221115041459 87 No support for tab or carriage return
+20221115035841 75 KEGML element: inflect span
+20221115035807 70 Creator authentication and encryption
+20221115035756 7 Custom data
+20221115035338 68 Content creator
+20221115035248 67 Difference between follow/avoid in user and other kegs
+20221115034747 64 Optional index nodes
+20221115034733 63 KEG app
+20221115034634 59 Zero node
+20221115034624 58 "It would be so much easier if everyone could read my database."
+20221115032527 5 Aggregation and attribution
+20221115021500 41 README.md
+20221115013223 37 Specification style and conventions
+20221115013026 35 KEGMLX unlimited headings
+20221115013013 32 Refactoring knowledge
+20221115012926 31 Software composition and aggregation
+20221115004454 80 Sentence case is preferred for titles
+20221114221853 23 HTML5 i Element
+20221114164850 73 Numbered lists restricted to 1.
+20221114152331 71 Subscriptions with encrypt-sign authentication
+20221114005904 28 Motivation
+20221114004132 66 XKCD's Randall Munroe understand Web URLs
+20221113214646 13 KEG is for writers
+20221113214040 0 Sorry, planned but not yet available
+20221113195157 61 Unlinked files
+20221113182858 14 Formerly known as
+20221113182444 11 Dynamic nodes
+20221113174717 60 Single line paragraphs promote better paragraph content
+20221113093142 4 Beautiful simplicity of Luhmann's identifiers
+20221105002639 8 Cypherpunk Manifesto
+20221031141902 46 KEG Public Key

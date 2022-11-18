@@ -1,6 +1,6 @@
 # Expanded KEGML (KEGMLX)
 
-**Expanded KEGML** (or **KEGMLX**) is capable of representing an entire keg as a single document in whatever form by lifting some of KEGML's core restrictions.
+**Expanded KEGML** (or **KEGMLX**) is capable of representing an entire keg as a single document in whatever form by lifting some core restrictions on KEGML.
 
 * [Unlimited headings](/35)
 * [Node include links replaced](/56)

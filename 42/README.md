@@ -3,57 +3,59 @@
 The KEGML design contains many significant constraints from both Pandoc and the original Markdown out of necessity and to address glaring omissions. The strictness of these limitations is very much by design since they produce the simplest, most compatible knowledge source capable of being represented in any number of ways through rendering later.
 
 * Paragraphs must never contain single line returns (soft wraps)
-* Paragraphs may contain hard wraps (two line returns)
-* No escaping anything with backslash at all (overcomplicates)
-* Only node links in paragraphs for easier reading
-* No URLs allowed in anything but a footnote
+* Paragraphs may contain hard wraps (two or more trailing spaces)
+* No escaping anything with backslash at all
+* Only node links and footnote refs in paragraphs for easier reading
+* No URLs allowed in anything but a footnote and list item
 * Only printable UNICODE code points and simplified white-space allowed
 * White-space consists of `space` or `newline` only
-* A `newline` is always a `\n` (never preceded by a `\r`)
+* Carriage returns (`\r`) are not allowed
 * Blocks delimited with one or more blank lines
 * A *blank line* is any line containing only white space
-* Only the `title` heading is it's own block, and must be first
+* No headings allowed except for **title**
 * Title must not exceed 72 runes including the `# ` prefix
-* Richer variation of spans including smart punctuation
-* Repurposed blocks as include lists
+* No `heading` attributes
+* Use of double prime (`"`) and (`'`) required for quotes
+* No smart punctuation specified (up to renders)
 * Include node link: `* [Some Title](/23)`
 * Include file link: `* [Some File](file.yaml)`
 * Nodes must be included at that location with that title
 * Files must be included with title exactly as they with suffix as class
 * Limited footnote support (from Pandoc)
 * Footnotes have no line returns (link to node if need more)
-* Special "meta matter" final block type (indented YAML, no fence)
-* Only `semblk` and `quote` allows inclusion of other blocks
+* No "front matter" allowed
+* No HTML nor raw Latex 
+* Only `division` allows inclusion of other blocks
 * Full support for Pandoc *regular* attributes (only, no "raw attributes)
-* Only `verbatim`, `bracketed` span and `div`, `fenced` blocks support attributes
+* Only `verbatim`, `bracketed` span and `division`, `fenced` blocks support attributes
 * Undotted single class attributes should be preferred
 * Languages must use the `{lang=en}` standard semantic attribute notation
 * A list of standardized attributes will be included with KEG (superset of Pandoc)
 * Non-semantic attributes are strongly discouraged since they destroy readability
 * Both `BACKTICK{3,8}` and `SQUIGLE{3,8}` supported for `fenced`
 * Languages should generally be separated by blocks --- especially `div`
-* A single space is optional between opening `div` and `fenced`
+* A single space is optional between opening `division` and `fenced` token
 * Div blocks should take advantage of initial cap readability `::: Warning`
 * Div block opening just be followed by blank line
 * Div block closing must be preceded by blank line
-* No `heading` attributes
 * A `verbatim` span must never contain a backtick (use `bracketed`, etc. instead)
 * Spans composed of `fields` of printable UNICODE code points
 * Fields are composed of `words`
 * Only one Refs block for a single KEG node (and it must be above tags)
 * Fields composed of `letters`, `punc`, `printable` (hyphenated terms, etc.)
 * Only GitHub flavored tables supported
-* No separators (horizontal rules)
-* No nested list items
+* Only four dashes for separator (`----`)
+* A list item is paragraph with list item prefix (single line)
+* Lists focused on creating outlines
 * No extended (long) lists
-* Long ("em") dashes `---`
-* Short ("en") dashes `--`
-* Ellipsis `...`
+* Apps should convert long ("em") dashes `---`
+* Apps should convert ("en") dashes `--`
+* Apps should convert ellipsis `...`
 * No tabs whatsoever, not even optional white space or `raw` (use file
   include instead)
 * No HTML (not even for "comments")
 * Images limited to own block
-* Full support for inline and raw LaTeX and MathJax
-
-Other than a single **figure** or **graphic** images MUST NOT be included in KEGML. Unlike most other flavors of Markdown, KEGML deliberately omits images of any kind. This is because all images MUST be contained within their own *figure nodes*. This promotes the use of images to convey something that cannot otherwise be described with text. Such a limitation promotes the widest possible range of participants and eliminates superfluous decoration which bloats content and complicates the publishing process.
-
+* Full inline and block MathJax
+* Multiple images supported, but should be not be too bulky and provide value.
+* Call an image a **figure** instead (and treat it like one).
+* All image content must be fully described and have alt text description for appendix.

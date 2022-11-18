@@ -1,12 +1,8 @@
-# KEGML URLs must only appear in lists and footnotes
+# In KEGML, a URL must only appear in footnote as citation or list item
 
-* A **URL** MUST ONLY exist within **footnote** or **list item**.
-* A **keg app** MUST warn if URL use (`://`) is detected outside of specification.
+* A **URL** MUST be in **footnote** or **list item** only.
+* A **keg app** MUST warn if URL use (`://`) is detected **out of spec**.
 
-KEGML is strict with regard to clean, consumable content. Therefore, URLs of any kind are prohibited from being included within any KEGML content *except* within a *list item* or  **footnote**. This is to prevent URLs from destroying the readability of the source text. Even contained, many Web URLs should still be shortened.
+KEG is strict with regard to clean, consumable **content**. Therefore, URLs of any kind are prohibited from KEGML content *except* within a footnote (usually with a **citation**) or in a list item. This is to prevent URLs from ruining source readability as they have done for the Web[^74.1].
 
-::: Comment
-
-Unfortunately, there is no curing the diseased state of modern Web URLs. Containing them, however, prevents them from infecting most KEG content.
-
-:::
+[^74.1]: Unfortunately, there is no curing the diseased state of modern Web URLs. Containing them effectively, however, prevents them from infecting KEG content.

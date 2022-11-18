@@ -2,11 +2,7 @@
 
 * The **link target** of a **file include link** MUST be a **file**.
 * The **file** must be in same directory as `README.md` containing link.
-* The **link text** MUST be a valid **title** or `DATA` or `FIGURE`.
-* Only one `DATA` and `FIGURE` link MUST be allowed per node.
-* A `[!DATA]` link indicates a node of type `d`.
-* A `![FIGURE]` link indicates a node of type `f`.
-* A `[!DATA]` and `![FIGURE]` link indicates a node of type `g`.
+* The **link text** MUST be a valid **title**.
 * A **keg app** MUST examine **link text** for exclamation point prefixes.
 * **Expanded** MUST replace link content of target file.
 * **Expanded** MUST create heading from link text unless exclamation point.

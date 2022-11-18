@@ -2,6 +2,6 @@
 
 KEGML is specified using PEGN[^55]
 
-* [!PEGN File](kegml.pegn)
+* [PEGN File](kegml.pegn?0)
 
 [^55]: Muhlestein, Robert S. "Parsing Expression Grammar Notation (PEGN)" (2019). https://pegn.dev

@@ -1,6 +1,8 @@
 # Knowledge Exchange Graph (KEG) Specification 2023-01
 
-State of this specification is currently a working draft but readers can follow development by watching the `keg` or `dex` files for changes. (This repo is also the first "keg".) Feedback and suggests are welcome as issues.
+State of this specification is currently a working draft but readers can follow development by watching the `keg` or `dex` files for changes. (This repo is also the first "keg".) Feedback and suggestions are welcome as issues[^1].
+
+[^1]: https://github.com/rwxrob/keg-spec/issues
 
 ----
 
