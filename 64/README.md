@@ -6,6 +6,8 @@
 * Hyphen MUST appear between two letters or digits.
 * ID SHOULD be less 12 runes or less.
 * ID SHOULD be easy to memorize.
+* ID MUST NOT be `dex` unless as specified for KEG **last changes index**.
+* Content creators SHOULD provide a `dex` index.
 * Index MUST contain **title**.
 * Title MAY be any valid title.
 * Index MUST contain one and only one **list block**.
@@ -14,6 +16,7 @@
 * **List item** MUST begin with anything but **node link** (else **include list**).
 * List item MUST contain one and only one **node link**.
 * List block SHOULD be sorted somehow.
+* Index MUST be listed in **keg info file** under `indexes` array with `id` and `summary` fields.
 
 Optional indexes of different kinds of KEG content allow a **content creator** or **follower** to easily search the content based on whatever semantic meaning has been applied to the limited number of KEGML types. Followers may choose to omit the optional index nodes from their own personal caches of kegs they follow.
 

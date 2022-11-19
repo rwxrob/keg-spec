@@ -2,8 +2,9 @@
 
 This index is automatically updated when new content is created or old content is updated. The latest changes are always on top. Every KEG content node is included. This list is guaranteed to always be the first and only list so that it can be reliably used to compare to previous cached copies of this KEG site to determine what has been updated.
 
+* 20221119T220931Z [Last changes index](/109)
+* 20221119T220840Z [Index node](/64)
 * 20221119T215055Z [KEG Web](/107)
-* 20221119T215002Z [Index node](/64)
 * 20221119T213318Z [Independent nodes](/26)
 * 20221119T213153Z [keg](/15)
 * 20221119T213052Z [Last changed index](/3)

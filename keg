@@ -6,3 +6,6 @@ state:   draft
 summary:
   An alternative to a broken Web for knowledge content creation,
   management, publishing, attribution, and secure exchange.
+indexes:
+  - id: dex
+    summary: last changes
