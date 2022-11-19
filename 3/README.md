@@ -1,4 +1,4 @@
-# Last Changes Index
+# Last changes index
 
 * A **keg** MAY have an **index node** with `dex` ID containing last node changes.
 * Content creators SHOULD provide a last changes index.
