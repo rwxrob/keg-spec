@@ -8,7 +8,7 @@
 * A keg MUST include a [**zero node**](/59).
 * A keg SHOULD contain one [**node**](/39) besides **zero node**.
 * A keg MUST contain a [**keg info file**](/48) named `keg`.
-* A keg SHOULD contain a [**keg index file**](/48) named `dex.md`.
+* A keg SHOULD contain a [**last changed index**](/48) named `dex`.
 * A keg MAY contain a **follow file** with URLs of kegs to follow.
 * A keg MAY contain an **avoid file** with URLs of kegs to avoid.
 * A keg MAY contain other files and directories but never secrets and avoid large files.

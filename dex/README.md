@@ -1,10 +1,15 @@
+# Last Changes Index
+
+This index is automatically updated when new content is created or old content is updated. The latest changes are always on top. Every KEG content node is included. This list is guaranteed to always be the first and only list so that it can be reliably used to compare to previous cached copies of this KEG site to determine what has been updated.
+
+* 20221119T215055Z [KEG Web](/107)
+* 20221119T215002Z [Index node](/64)
+* 20221119T213318Z [Independent nodes](/26)
+* 20221119T213153Z [keg](/15)
+* 20221119T213052Z [Last changed index](/3)
+* 20221119T150603Z [KEGML Specification in PEGN](/55)
 * 20221118T063226Z [Isosec](/84)
-* 20221118T062337Z [KEG index file](/3)
-* 20221118T062136Z [KEG Web](/107)
-* 20221118T062056Z [Independent nodes](/26)
-* 20221118T061850Z [Optional index nodes](/64)
 * 20221118T061209Z [KEGMLX 10-rune fences and divisions](/16)
-* 20221118T061128Z [keg](/15)
 * 20221118T053341Z [Beacon](/99)
 * 20221118T053341Z [Leave indexing up to apps and developers](/89)
 * 20221118T053304Z [Query code](/38)
@@ -15,7 +20,6 @@
 * 20221118T044124Z [Node include link](/77)
 * 20221118T043536Z [AP style preferred](/6)
 * 20221118T043523Z [KEGML link differences from Markdown](/57)
-* 20221118T043322Z [KEGML Specification in PEGN](/55)
 * 20221118T043302Z [Division block](/52)
 * 20221118T043222Z [KEG Markup Language (KEGML)](/50)
 * 20221118T043202Z [KEG Info File](/48)
