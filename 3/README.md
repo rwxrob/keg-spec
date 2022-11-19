@@ -1,6 +1,8 @@
-# Last changed index
+# Last Changes Index
 
-* An **index** named `dex` MAY exist in the KEG root directory.
+* A **keg** MAY have an **index node** with `dex` ID containing last node changes.
+* Content creators SHOULD provide a last changes index.
+* Index `dex` content is specified and ID reserved.
 * Index MAY use any title.
 * Index MAY include one **paragraph block** before list.
 * Index MUST contain a list with one list item for every KEG node.
@@ -8,6 +10,9 @@
 * List item MUST begin with an **isosec** of second node last changed.
 * Last change MUST be determined by changes to *any* file in node.
 * List MUST be sorted by isosec.
+* Index MUST be listed in **keg info file**.
+
+A special reserved index is specified to contain a list of all nodes with the last changed nodes at the top of the list. The node ID `dex` is therefore reserved and unavailable to content creators. If a content creator chooses to provide a `dex`, however, then it must be listed in the keg info file along with any other custom indexes provided.
 
 ```md
 # Last Changes Index
