@@ -1,6 +1,5 @@
 * 2022-11-22 23:12:46Z [KEG apps don't have to implement the whole spec](/116)
 * 2022-11-22 22:42:11Z [Sorry, planned but not yet available](/0)
-* 2022-11-21 19:40:34Z [Sample](/113)
 * 2022-11-21 16:39:23Z [Why YAML for `keg` info file?](/112)
 * 2022-11-21 14:59:00Z [Justifying content redundancy](/111)
 * 2022-11-21 14:50:47Z [Search implementation suggestions](/110)
