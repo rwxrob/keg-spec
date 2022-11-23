@@ -1,3 +1,4 @@
+* 2022-11-22 23:18:24Z [Smart punctuation is not specified](/104)
 * 2022-11-22 23:12:46Z [KEG apps don't have to implement the whole spec](/116)
 * 2022-11-22 22:42:11Z [Sorry, planned but not yet available](/0)
 * 2022-11-21 16:39:23Z [Why YAML for `keg` info file?](/112)
@@ -9,7 +10,6 @@
 * 2022-11-19 22:32:46Z [Optionally using bold for linking to terms](/72)
 * 2022-11-19 21:15:49Z [keg](/15)
 * 2022-11-19 21:15:11Z [KEG Web](/107)
-* 2022-11-19 21:14:57Z [Smart punctuation is not specified, but preferred](/104)
 * 2022-11-19 21:14:17Z [Heavily inspired by "mind mapping" applications and "zettelkasten"](/101)
 * 2022-11-19 21:12:31Z [Rune](/100)
 * 2022-11-19 21:11:49Z [Domain Model](/10)
