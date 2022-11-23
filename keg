@@ -1,12 +1,18 @@
-updated: 2022-11-21T16:39:23Z
+updated: 2022-11-22 22:42:11Z
 kegv:    2023-01
 title:   Knowledge Exchange Graph (KEG) Specification 2023-01
-url:     git@github.com:rwxrob/keg-spec.git
 creator: git@github.com:rwxrob/rwxrob.git
 state:   draft
+
 summary:
   An alternative to a broken Web for knowledge content creation,
   management, publishing, attribution, and secure exchange.
+
+urls:
+  - git@github.com:rwxrob/keg-spec.git
+
 indexes:
-  - id: dex
-    summary: last changes
+  - file: dex/latest.md
+    summary: by time last updated
+  - file: dex/nodes.tsv
+    summary: by id
