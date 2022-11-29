@@ -16,8 +16,8 @@ A KEG node (aka "content node", "knowledge node", or just "node") is simply a di
 
 A node is the most granular and composable unit of KEG. The name derives comes from "graph node" in a **graph data structure** where the node is a vertex at which other lines, links, or edges intersect.
 
-* [*Dynamic Nodes](/11)
-* [*Text Nodes](/0)
-* [*Data Nodes](/0)
-* [*Figure Nodes](/0)
-* [*Graphic Nodes](/0)
+* [*Dynamic Nodes](../11)
+* [*Text Nodes](../0)
+* [*Data Nodes](../0)
+* [*Figure Nodes](../0)
+* [*Graphic Nodes](../0)

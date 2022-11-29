@@ -14,7 +14,7 @@ In fact, it's impossible to censor content on KEG since KEG does not depend any 
 
 KEG will likely be received with incredulity and skepticism by those whose profit centers and dogmas are disrupted by its adoption, but we are committed to proving that a better, world-wide knowledge network --- one that can never be censored or stopped --- is possible, even if we are the only ones who use it.
 
-* [Enable good content](/12)
-* [Cypherpunk Manifesto](/8)
-* [Refactoring knowledge](/32)
-* ["It would be so much easier if everyone could read my database."](/58)
+* [Enable good content](../12)
+* [Cypherpunk Manifesto](../8)
+* [Refactoring knowledge](../32)
+* ["It would be so much easier if everyone could read my database."](../58)

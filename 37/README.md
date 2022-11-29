@@ -9,4 +9,4 @@ The following words are reserved with special meaning and have been deliberately
 * **MAY**
 * **RECOMMENDED**
 
-* [AP style preferred](/6)
+* [AP style preferred](../6)

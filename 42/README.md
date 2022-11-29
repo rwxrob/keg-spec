@@ -17,7 +17,7 @@ The KEGML design contains many significant constraints from both Pandoc and the 
 * No `heading` attributes
 * Use of double prime (`"`) and (`'`) required for quotes
 * No smart punctuation specified (up to renders)
-* Include node link: `* [Some Title](/23)`
+* Include node link: `* [Some Title](../23)`
 * Include file link: `* [Some File](file.yaml)`
 * Nodes must be included at that location with that title
 * Files must be included with title exactly as they with suffix as class

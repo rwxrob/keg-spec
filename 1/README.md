@@ -25,5 +25,5 @@ mkdir 2
 vi 2/README.md
 ```
 
-* [Beautiful simplicity of Luhmann's identifiers](/4)
-* [Tim Berners-Lee warned against "slugs" in the 90s](/2)
+* [Beautiful simplicity of Luhmann's identifiers](../4)
+* [Tim Berners-Lee warned against "slugs" in the 90s](../2)

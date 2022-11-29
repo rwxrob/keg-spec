@@ -4,7 +4,7 @@ In software development the concept of "refactoring" is reorganizing code that m
 
 Writers "refactor" all the time but call it "editing" instead. The process is largely identical. In fact, when using popular tools like Scrivener we see an almost one-for-one comparison to software development.
 
-The reason for this commonality is pretty obvious. Humans like graph structures. And why wouldn't we, a graph structure is *exactly* how the neurons in our brains are organized and connected. We can leverage this knowledge to get the most performance out of our [second brain](/49) as well.
+The reason for this commonality is pretty obvious. Humans like graph structures. And why wouldn't we, a graph structure is *exactly* how the neurons in our brains are organized and connected. We can leverage this knowledge to get the most performance out of our [second brain](../49) as well.
 
 Say a technical author has been letting their first and second brains go organically wild during their creative writing process. They let those tangent and rabbit holes become productive opportunities to explore content they might now have included had then been more rigid about their process. They riff on thoughts and knowledge like a jazz musician at the local pub on a random Thursday night (when the drinks are cheaper). But what happens when they stop and look back and realize that some of that amazing stuff has no place in this specific KEG. No worries. It's time to refactor.
 

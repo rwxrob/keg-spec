@@ -19,7 +19,7 @@ A special reserved index is specified to contain a list of all nodes with the la
 
 This index is automatically updated when new content is created or old content is updated. The latest changes are always on top. Every KEG content node is included. This list is guaranteed to always be the first and only list so that it can be reliably used to compare to previous cached copies of this KEG site to determine what has been updated.
 
-* 20221031180218 [KEG nodes index file](/3)
-* 20221031180317 [Beautiful simplicity of Luhmann's identifiers](/4)
-* 20221031180345 [Much newer than others, after one with no title](/300)
+* 2022-10-31 18:02:18Z [KEG nodes index file](../3)
+* 2022-10-31 18:03:17Z [Beautiful simplicity of Luhmann's identifiers](../4)
+* 2022-10-31 18:03:45Z [Much newer than others, after one with no title](../300)
 ```
