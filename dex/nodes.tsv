@@ -83,7 +83,7 @@
 95	2022-11-15 18:22:55Z	URL
 96	2022-11-15 18:37:20Z	Acronyms are terms with beacons and nodes
 97	2022-11-15 22:19:44Z	Advantage of beacon terms over hyperlinks
-99	2022-11-18 05:33:41Z	Beacon
+99	2022-11-18 00:33:41Z	Beacon
 100	2022-11-20 02:12:31Z	Rune
 101	2022-11-20 02:14:17Z	Heavily inspired by "mind mapping" applications and "zettelkasten"
 102	2022-11-18 03:19:38Z	Out of spec
@@ -100,3 +100,4 @@
 117	2022-12-02 05:14:35Z	No tags in content nodes
 118	2022-12-19 04:22:15Z	Aggregate Node
 119	2022-12-19 04:28:34Z	Include List
+120	2022-12-19 10:37:59Z	Last changed should only depend on `README.md` file
