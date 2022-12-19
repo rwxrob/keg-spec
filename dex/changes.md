@@ -1,3 +1,4 @@
+* 2022-12-19 04:22:15Z [Aggregate Node](../118)
 * 2022-12-02 05:14:35Z [No tags in content nodes](../117)
 * 2022-11-25 21:43:49Z [KEGML differences from Markdown](../42)
 * 2022-11-25 21:43:19Z [Beautiful simplicity of Luhmann's identifiers](../4)
