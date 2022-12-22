@@ -1,12 +1,12 @@
 # Footnote
 
 * A **footnote** MUST consist of a **footnote marker span** within a **paragraph** or **list item** and a **footnote paragraph** within a **footnotes** block linked to the marker by a common **footnote ID**.
-* A **footnote ID** MUST begin with same integer of current node ID.
-* A **footnote ID** MAY omit rest of reference if only footnote in node.
-* A **footnote ID** MUST add dot (`.`) and incremental int if more than one footnote.
-* A **keg app** MUST warn when migrating or importing nodes with footnotes.
+* A **footnote ID** MUST be unique to the content node
+* A **keg app** MUST qualify the footnotes relative to their content node IDs
 
-A KEGML **footnote** works exactly as they do in Pandoc Markdown except that the text used in the **footnote ID** must be unique across the entire keg scope. Therefore, use of an integer identifier that matches that same file containing the footnote is required. For multiple footnotes a dot and incremental integer are additionally required.
+A KEGML **footnote** works exactly as they do in other markdown variations except that each footnote reference (normally near the bottom of the content node) must be in its own block to avoid confusion and increase readability.[^3] They also may not contain multiple lines. Such things should be put into their own content node instead.
+
+[^3]: Many markdown renderers (such as Glamour) will consider a block of multiple footnote references as just another paragraph. Therefore, in order to ensure consistency, each footnote reference must be in its own block (surrounded by blank lines).
 
 ```kegml
 This is a sentence with a footnote.[^1.1]
