@@ -1,3 +1,4 @@
+* 2022-12-22 09:42:26Z [URL must only appear in footnote, list item, or simple block](../74)
 * 2022-12-20 04:42:47Z [KEG directory MUST contain `keg` and `kegdex` files](../121)
 * 2022-12-19 10:37:59Z [Last changed should only depend on `README.md` file](../120)
 * 2022-12-19 04:28:34Z [Include List](../119)
@@ -59,7 +60,6 @@
 * 2022-11-18 03:19:44Z [Simple quotes preferred](../103)
 * 2022-11-18 03:19:38Z [Out of spec](../102)
 * 2022-11-18 00:33:41Z [Beacon](../99)
-* 2022-11-17 21:49:43Z [In KEGML, a URL must only appear in footnote as citation or list item](../74)
 * 2022-11-17 08:04:40Z ["Front matter" was never actually front matter](../83)
 * 2022-11-16 09:13:28Z [Soft returns cause viewing and diff problems](../91)
 * 2022-11-16 09:13:05Z [Contextual semantic difference for same KEGML markup syntax](../85)
