@@ -1,5 +1,5 @@
+* 2022-12-22 10:19:46Z [URL must only appear in footnote, list item, or simple block](../74)
 * 2022-12-22 10:19:26Z [Footnote](../40)
-* 2022-12-22 09:57:58Z [URL must only appear in footnote, list item, or simple block](../74)
 * 2022-12-22 09:45:00Z [URL Block](../122)
 * 2022-12-20 04:42:47Z [KEG directory MUST contain `keg` and `kegdex` files](../121)
 * 2022-12-19 10:37:59Z [Last changed should only depend on `README.md` file](../120)
